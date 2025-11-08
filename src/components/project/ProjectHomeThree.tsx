@@ -112,9 +112,11 @@ const ProjectHomeThree = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+
                   <SwiperSlide className="swiper-slide">
                   <div className="it-project-5__item fix">
-                    <img src="assets/img/curriculum/highsechome.jpg" alt="theme" />
+                   <img src="assets/img/curriculum/highsechome.jpg" alt="theme" />
+
                     <div className="it-project-5__text">
                       <Link href="/curriculum"><i
                         className="fa-sharp fa-regular fa-arrow-right"></i></Link>
@@ -122,7 +124,8 @@ const ProjectHomeThree = () => {
                       <h6>Higher Secondary Section</h6>
                     </div>
                     <div className="it-project-5__shape">
-                      <img src="assets/img/curriculum/highsechome.jpg" alt="theme" />
+                     <img src="assets/img/curriculum/highsechome.jpg" alt="theme" />
+
                     </div>
                   </div>
                 </SwiperSlide>
