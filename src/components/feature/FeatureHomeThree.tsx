@@ -14,12 +14,14 @@ const FeatureHomeThree = () => {
   ];
 
   return (
-    <section
-      className="it-feature-3__area py-5"
-      style={{
-        background: "linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%)",
-      }}
-    >
+   <section
+  className="it-feature-3__area py-5"
+  style={{
+    background: "linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%)",
+    paddingTop: "120px", // 👈 same as About section
+  }}
+>
+
       <div className="container">
         <div
           className="row align-items-center"
