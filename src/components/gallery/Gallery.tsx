@@ -233,8 +233,10 @@ const Gallery = () => {
 
       <style jsx>{`
         .gallery-container {
-          padding: 60px 0;
-        }
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 
         .gallery-grid {
           display: grid;

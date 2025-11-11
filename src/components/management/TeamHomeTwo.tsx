@@ -4,7 +4,7 @@ import React from 'react';
 const TeamHomeTwo = () => {
   return (
     <>
-      <div className="it-team-4__area pt-120 pb-90">
+   <div className="it-team-4__area pt-100 pb-100">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
