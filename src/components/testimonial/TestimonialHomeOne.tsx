@@ -38,7 +38,7 @@ const setting = {
 const TestimonialHomeOne = () => {
   return (
     <>
-      <div className="it-testimonial__area it-testimonial__space ">
+      <div className="it-testimonial__area it-testimonial__space">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">

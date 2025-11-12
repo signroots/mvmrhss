@@ -13,16 +13,13 @@ const FeatureHomeThree = () => {
     "Various educational clubs such as Social, Mathematics, Science, and Language clubs function actively in our school",
   ];
 
-
   return (
-   <section
-  className="it-feature-3__area pt-100 pb-10"
-  style={{
-    background: "linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%)",
-   
-  }}
->
-
+    <section
+       className="it-feature-3__area pt-100 pb-10"
+      style={{
+        background: "linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%)",
+      }}
+    >
       <div className="container">
         <div
           className="row align-items-center"

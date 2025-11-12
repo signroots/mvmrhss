@@ -3,8 +3,7 @@ import React from "react";
 const Contact: React.FC = () => {
   return (
     <>
-
-      {/* ===== Row 1: Contact Info ===== */}
+       {/* ===== Row 1: Contact Info ===== */}
       <section className="pt-100 pb-50 bg-white">
         <div className="container text-center">
           <h2 className="fw-bold mb-3">Get in Touch</h2>
