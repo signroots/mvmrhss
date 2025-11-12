@@ -11,8 +11,7 @@ const FooterOne = ({ style_2 }: any) => {
         <div className={`it-footer__area it-footer__space ${style_2 ? "black-bg" : "theme-bg"} z-index`}>
           <div className="container">
             <div className="row">
-              <div className="col-xl-3 col-lg-4 col-md-6 mb-30 wow itfadeUp" data-wow-duration=".9s"
-                data-wow-delay=".3s">
+              <div className="col-xl-3 col-lg-4 col-md-6 mb-3">
                 <div className="it-footer__widget footer-col-1">
                   <div className="it-footer__logo">
                     <Link href="/">
@@ -25,7 +24,7 @@ const FooterOne = ({ style_2 }: any) => {
                  
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-4 col-md-6 mb-30 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+              <div className="col-xl-2 col-lg-4 col-md-6 mb-30">
                 <div className="it-footer__widget footer-col-2">
                   <h4 className="it-footer__widget-title">Usefull Links</h4>
                   <div className="it-footer__list">
@@ -39,8 +38,7 @@ const FooterOne = ({ style_2 }: any) => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-6 mb-30 wow itfadeUp" data-wow-duration=".9s"
-                data-wow-delay=".7s">
+              <div className="col-xl-4 col-lg-4 col-md-6 mb-3">
                 <div className="it-footer__widget footer-col-3">
                   <h4 className="it-footer__widget-title">Our Updates</h4>
                   <div className="it-footer__gallery-box">
@@ -61,7 +59,7 @@ const FooterOne = ({ style_2 }: any) => {
                   </div>
                 </div>
               </div>
-           <div className="col-xl-3 col-lg-4 col-md-6 mb-30 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+           <div className="col-xl-3 col-lg-4 col-md-6 mb-30">
         <div className="it-footer__widget footer-col-4">
       <h4 className="it-footer__widget-title">Contact Us</h4>
     {/* Contact List */}
@@ -110,7 +108,7 @@ const FooterOne = ({ style_2 }: any) => {
         <div className={`it-copyright__area ${style_2 ? "black-bg" : "it-copyright__bg"}`}>
           <div className="container">
             <div className="row">
-              <div className="col-12 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+              <div className="col-12">
                 <div className="it-copyright__text text-center">
                   <span>
                   &copy; {new Date().getFullYear()}{" "}
