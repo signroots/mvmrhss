@@ -39,10 +39,10 @@ const AdmissionForm: React.FC = () => {
 
     try {
       await emailjs.send(
-        "service_b8jhths", // Your EmailJS Service ID
-        "template_5cv60tb", // Your EmailJS Template ID
+        "service_b8jhths",
+        "template_5cv60tb",
         formData,
-        "rdpFsDpIb5RAcDe5S" // Your EmailJS Public Key
+        "rdpFsDpIb5RAcDe5S"
       );
 
       toast.success("Admission form submitted successfully!");
@@ -73,16 +73,18 @@ const AdmissionForm: React.FC = () => {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-lg-8">
-        <div className="card border-0 shadow-none rounded-4">
-
-       <div className="card-body p-4 p-md-5 border-0">
-
+          {/* Centered + restricted width */}
+          <div className="col-lg-8 mx-auto" style={{ maxWidth: "600px" }}>
+            <div className="card border-0 shadow-none rounded-4">
+              {/* Reduced mobile padding, normal desktop padding */}
+              <div className="card-body px-3 py-4 px-md-5 py-md-5 border-0">
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="row g-4">
                     {/* Student Name */}
                     <div className="col-md-6">
-                      <label className="form-label fw-semibold">Student Name*</label>
+                      <label className="form-label fw-semibold">
+                        Student Name*
+                      </label>
                       <input
                         type="text"
                         name="studentName"
@@ -95,7 +97,9 @@ const AdmissionForm: React.FC = () => {
 
                     {/* Guardian Name */}
                     <div className="col-md-6">
-                      <label className="form-label fw-semibold">Guardian Name*</label>
+                      <label className="form-label fw-semibold">
+                        Guardian Name*
+                      </label>
                       <input
                         type="text"
                         name="guardianName"
@@ -108,7 +112,9 @@ const AdmissionForm: React.FC = () => {
 
                     {/* Date of Birth */}
                     <div className="col-md-6">
-                      <label className="form-label fw-semibold">Date of Birth*</label>
+                      <label className="form-label fw-semibold">
+                        Date of Birth*
+                      </label>
                       <input
                         type="date"
                         name="dob"
@@ -119,9 +125,11 @@ const AdmissionForm: React.FC = () => {
                       />
                     </div>
 
-                    {/* Aadhar */}
+                    {/* Aadhar Number */}
                     <div className="col-md-6">
-                      <label className="form-label fw-semibold">Aadhar Number*</label>
+                      <label className="form-label fw-semibold">
+                        Aadhar Number*
+                      </label>
                       <input
                         type="text"
                         name="aadhar"
@@ -134,7 +142,9 @@ const AdmissionForm: React.FC = () => {
 
                     {/* Phone */}
                     <div className="col-md-6">
-                      <label className="form-label fw-semibold">Phone Number*</label>
+                      <label className="form-label fw-semibold">
+                        Phone Number*
+                      </label>
                       <input
                         type="tel"
                         name="phone"
