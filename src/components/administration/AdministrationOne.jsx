@@ -33,11 +33,11 @@ const Administration = () => {
               <div className="it-blog-4__content">
                 <h4 className="it-blog-4__title">Mr.Rasheed Karinkappara</h4>
                 <p className="text-muted mb-2">Principal</p>
-                <p>
+                 {/*<p>
                   Our Principal leads the institution with dedication and a vision
                   for holistic education. He emphasizes excellence, discipline, and
                   compassion in every aspect of school life.
-                </p>
+                </p>*/}
               </div>
             </div>
           </div>
@@ -61,11 +61,11 @@ const Administration = () => {
               <div className="it-blog-4__content">
                 <h4 className="it-blog-4__title">Mr.Alikutty T M</h4>
                 <p className="text-muted mb-2">Vice Principal</p>
-                <p>
+                  {/* <p>
                   The Vice Principal supports the school’s vision through innovative
                   teaching strategies and student-focused administration, ensuring
                   smooth day-to-day academic functioning.
-                </p>
+                </p>*/}
               </div>
             </div>
           </div>
