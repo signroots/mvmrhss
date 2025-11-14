@@ -2,21 +2,21 @@
 import React, { useState, useEffect } from "react";
 
 const AppDownloadSidebar = () => {
-  // Track window width for responsive styles
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // mobile breakpoint
+      setIsMobile(window.innerWidth < 768); 
     };
 
-    handleResize(); // check on first load
+    handleResize();
     window.addEventListener("resize", handleResize);
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Sidebar style
+  // SAME WIDTH for box + images
+  const itemWidth = isMobile ? "120px" : "160px";
+
   const sidebarStyle: React.CSSProperties = {
     position: "fixed",
     top: "50%",
@@ -24,20 +24,32 @@ const AppDownloadSidebar = () => {
     transform: "translateY(-50%)",
     display: "flex",
     flexDirection: "column",
+    alignItems: "flex-end",
     gap: "10px",
     zIndex: 1050,
   };
 
-  // Icon style (desktop + mobile size)
+  const boxStyle: React.CSSProperties = {
+  backgroundColor: "black",
+  color: "white",
+  width: itemWidth,
+  padding: isMobile ? "6px 10px" : "10px 14px",
+  borderRadius: "6px",
+  fontSize: isMobile ? "12px" : "12px",
+  fontWeight: 600,
+  textAlign: "center",
+  whiteSpace: "nowrap", // 🔥 prevents text breaking
+};
+
   const imgStyle: React.CSSProperties = {
-    height: isMobile ? "30px" : "46px", //  mobile size
-    width: "auto",
+    width: itemWidth,
+    height: "auto",
     cursor: "pointer",
     transition: "transform 0.2s ease-in-out",
   };
 
   const imgHover = (e: React.MouseEvent<HTMLImageElement>) => {
-    e.currentTarget.style.transform = "scale(1.1)";
+    e.currentTarget.style.transform = "scale(1.08)";
   };
 
   const imgHoverOut = (e: React.MouseEvent<HTMLImageElement>) => {
@@ -46,6 +58,10 @@ const AppDownloadSidebar = () => {
 
   return (
     <div style={sidebarStyle}>
+      {/* SAME WIDTH BOX */}
+      <div style={boxStyle}>Download School App</div>
+
+      {/* Play Store */}
       <a
         href="https://play.google.com/store/apps/details?id=info.passdaily_new.mvmrhss&pli=1"
         target="_blank"
@@ -60,6 +76,7 @@ const AppDownloadSidebar = () => {
         />
       </a>
 
+      {/* App Store */}
       <a
         href="https://apps.apple.com/us/app/mvmr-higher-secondary-school/id6747276941"
         target="_blank"
