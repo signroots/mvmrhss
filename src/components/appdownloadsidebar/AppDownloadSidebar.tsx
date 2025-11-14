@@ -1,7 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 
 const AppDownloadSidebar = () => {
-  // Inline styles
+  // Track window width for responsive styles
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // mobile breakpoint
+    };
+
+    handleResize(); // check on first load
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Sidebar style
   const sidebarStyle: React.CSSProperties = {
     position: "fixed",
     top: "50%",
@@ -13,19 +28,20 @@ const AppDownloadSidebar = () => {
     zIndex: 1050,
   };
 
+  // Icon style (desktop + mobile size)
   const imgStyle: React.CSSProperties = {
-    height: "56px",
+    height: isMobile ? "30px" : "46px", //  mobile size
     width: "auto",
     cursor: "pointer",
     transition: "transform 0.2s ease-in-out",
   };
 
   const imgHover = (e: React.MouseEvent<HTMLImageElement>) => {
-    (e.currentTarget as HTMLImageElement).style.transform = "scale(1.1)";
+    e.currentTarget.style.transform = "scale(1.1)";
   };
 
   const imgHoverOut = (e: React.MouseEvent<HTMLImageElement>) => {
-    (e.currentTarget as HTMLImageElement).style.transform = "scale(1)";
+    e.currentTarget.style.transform = "scale(1)";
   };
 
   return (
