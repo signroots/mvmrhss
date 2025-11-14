@@ -74,8 +74,10 @@ const AdmissionForm: React.FC = () => {
 
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <div className="card border-0 shadow-lg rounded-4">
-              <div className="card-body p-4 p-md-5">
+        <div className="card border-0 shadow-none rounded-4">
+
+       <div className="card-body p-4 p-md-5 border-0">
+
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="row g-4">
                     {/* Student Name */}
@@ -164,7 +166,7 @@ const AdmissionForm: React.FC = () => {
                       className="btn btn-primary px-5 py-2 rounded-pill"
                       disabled={sending}
                     >
-                      {sending ? "Submitting..." : "Submit Admission Form"}
+                      {sending ? "Submitting..." : "Submit"}
                     </button>
                   </div>
                 </form>
