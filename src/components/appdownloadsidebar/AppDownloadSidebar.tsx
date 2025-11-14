@@ -38,7 +38,7 @@ const AppDownloadSidebar = () => {
   fontSize: isMobile ? "12px" : "12px",
   fontWeight: 600,
   textAlign: "center",
-  whiteSpace: "nowrap", // 🔥 prevents text breaking
+  whiteSpace: "nowrap", 
 };
 
   const imgStyle: React.CSSProperties = {
