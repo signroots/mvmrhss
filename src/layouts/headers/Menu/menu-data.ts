@@ -23,14 +23,17 @@ const menu_data = [
       title: "Administration",
       link: "/administration",
     },
-    {
-      id: 12,
-      title: "Management",
-      link: "/management",
-    },
-   
+    
   ],
 },
+
+{
+    id: 3,
+     title: "Management",
+      link: "/management",
+  },
+
+
 
   {
     id: 5,
