@@ -34,7 +34,7 @@ const closeBtn: React.CSSProperties = {
 };
 
 const title = (isMobile: boolean): React.CSSProperties => ({
-  fontSize: isMobile ? "15px" : "16px",
+  fontSize: isMobile ? "20px" : "24px",
   fontWeight: 600,
   marginBottom: "16px",
 });
