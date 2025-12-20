@@ -13,13 +13,14 @@ const overlay: React.CSSProperties = {
 };
 
 const popup: React.CSSProperties = {
-  background: "#fff",
-  width: "380px",
+  background: "#f9fafb",
+  width: "420px",
   maxWidth: "92%",
-  padding: "22px",
-  borderRadius: "12px",
+  padding: "26px",
+  borderRadius: "16px",
   position: "relative",
   textAlign: "center",
+  boxShadow: "0 18px 45px rgba(0,0,0,0.25)",
 };
 
 const closeBtn: React.CSSProperties = {
@@ -32,33 +33,37 @@ const closeBtn: React.CSSProperties = {
   cursor: "pointer",
 };
 
+const title = (isMobile: boolean): React.CSSProperties => ({
+  fontSize: isMobile ? "15px" : "16px",
+  fontWeight: 600,
+  marginBottom: "16px",
+});
+
 const list: React.CSSProperties = {
-  listStyle: "disc",
-  paddingLeft: "20px",
-  textAlign: "left",
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gap: "12px",
+  listStyle: "none",
+  padding: 0,
   fontSize: "14px",
-  marginBottom: "18px",
+  marginBottom: "22px",
+};
+
+const listItem: React.CSSProperties = {
+  background: "#ffffff",
+  padding: "10px",
+  borderRadius: "8px",
+  boxShadow: "0 2px 6px rgba(0,0,0,0.08)",
 };
 
 const downloadBox: React.CSSProperties = {
-  borderTop: "1px solid #eee",
-  paddingTop: "12px",
-};
-
-const label: React.CSSProperties = {
-  background: "#000",
-  color: "#fff",
-  padding: "6px 12px",
-  fontSize: "12px",
-  fontWeight: 600,
-  borderRadius: "5px",
-  display: "inline-block",
-  marginBottom: "10px",
+  borderTop: "1px solid #e5e7eb",
+  paddingTop: "16px",
 };
 
 const storeRow: React.CSSProperties = {
   display: "flex",
-  gap: "10px",
+  gap: "12px",
   justifyContent: "center",
   flexWrap: "wrap",
 };
@@ -90,26 +95,21 @@ const AppPopup = () => {
         <button style={closeBtn} onClick={() => setShow(false)}>
           ✕
         </button>
-      <h2 style={{ marginBottom: "12px", fontSize: "25px" }}>
-        School App Features
-      </h2>
 
-
+        <h2 style={title(isMobile)}>School App Features</h2>
 
         <ul style={list}>
-          <li>Track Vehicle</li>
-          <li>Students Attendance</li>
-          <li>Mark List</li>
-          <li>Parent's Enquiry</li>
-          <li>Study Materials</li>
-          <li>Leave Letter</li>
-          <li>Meetings</li>
-          <li>Activity Gallery</li>
+          <li style={listItem}>Track Vehicle</li>
+          <li style={listItem}>Students Attendance</li>
+          <li style={listItem}>Mark List</li>
+          <li style={listItem}>Parent&apos;s Enquiry</li>
+          <li style={listItem}>Study Materials</li>
+          <li style={listItem}>Leave Letter</li>
+          <li style={listItem}>Meetings</li>
+          <li style={listItem}>Activity Gallery</li>
         </ul>
 
         <div style={downloadBox}>
-         
-
           <div style={storeRow}>
             <a
               href="https://play.google.com/store/apps/details?id=info.passdaily_new.mvmrhss&pli=1"
