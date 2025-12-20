@@ -6,6 +6,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import Wrapper from '@/layouts/Wrapper';
 import CurriculumHome from "@/components/curriculum/CurriculumHome"
 import NewsHome from '@/components/news/NewsHome';
+import AppPopup from "@/components/apppopup/AppPopup";
 
 
 export const metadata = {
@@ -28,7 +29,7 @@ const IndexPage = () => {
           {/* Shot Section for home only */}
         <CurriculumHome />
         <NewsHome></NewsHome>
-
+ <AppPopup />
        
       </main>
 

@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { animationCreate } from "@/utils/utils";
 import ScrollToTop from "@/components/common/scroll-to-top";
-import AppDownloadSidebar from "@/components/appdownloadsidebar/AppDownloadSidebar";
+{/*import AppDownloadSidebar from "@/components/appdownloadsidebar/AppDownloadSidebar";*/}
 
 const Wrapper = ({ children }: any) => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const Wrapper = ({ children }: any) => {
     <>
       {children}
       <ScrollToTop />
-      <AppDownloadSidebar /> {/* Fixed sidebar */}
+      {/*<AppDownloadSidebar />  Fixed sidebar */}
     </>
   );
 };
