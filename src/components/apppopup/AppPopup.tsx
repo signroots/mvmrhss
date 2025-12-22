@@ -96,7 +96,7 @@ const AppPopup = () => {
           ✕
         </button>
 
-        <h2 style={title(isMobile)}>School App Features</h2>
+        <h2 style={title(isMobile)}>Download the school App</h2>
 
         <ul style={list}>
           <li style={listItem}>Track Vehicle</li>
